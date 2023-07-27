@@ -4,7 +4,7 @@ const app = express()
 const PORT= 4000
 
 const User = require("./models/user")
-const { default: mongoose } = require("mongoose")
+const { default : mongoose } = require("mongoose")
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
@@ -12,7 +12,7 @@ app.use(cors())
 
 
 
-const dbURL = "mongodb+srv://shreyasmp7:SEcpxc6hjLWJEUCv@cluster0.ibssik6.mongodb.net/?retryWrites=true&w=majority"
+const dbURL = "mongodb+srv://shreyasgowdampp:Mz527TGw93fGAs6b@cluster-db.gwcjzcp.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(dbURL).then(()=>{
     console.log("successfully connected into database");
 })
